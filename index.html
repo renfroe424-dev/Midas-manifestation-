@@ -4,25 +4,22 @@
   <meta charset="UTF-8" />
   <title>Meditation to Open Your Third Eye Using Chakra-Tuned Audio Tracks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Guided third eye chakra meditation audio tracks designed to support mental clarity and calmer thinking." />
+  <meta name="description" content="Meditation to open your third eye using chakra-tuned audio tracks designed to support mental clarity and calmer thinking." />
 
   <style>
     :root {
-      --bg: #050814;
-      --bg-soft: #0c1020;
+      --bg: #050816;
+      --bg-soft: #0b1023;
       --card: #11162b;
       --accent: #7f5dff;
-      --accent-soft: rgba(127, 93, 255, 0.1);
-      --text: #f4f6ff;
+      --accent-2: #4fd1c5;
+      --text: #f5f7ff;
       --muted: #a6b0d8;
-      --border-subtle: #242b49;
-      --success: #37d996;
-      --danger: #ff6b6b;
-      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.45);
-      --radius-lg: 18px;
-      --radius-md: 12px;
+      --border-subtle: #252b45;
+      --radius-lg: 20px;
+      --radius-md: 14px;
       --radius-pill: 999px;
-      --spacing: 20px;
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.55);
       --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, sans-serif;
     }
@@ -35,10 +32,10 @@
 
     body {
       font-family: var(--font-main);
-      background: radial-gradient(circle at top, #1c2040 0, #050814 55%);
+      background: radial-gradient(circle at top, #1b2346 0, #050816 60%);
       color: var(--text);
-      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
     a {
@@ -46,43 +43,38 @@
       text-decoration: none;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     .page {
       min-height: 100vh;
-      padding: 16px;
       display: flex;
       justify-content: center;
+      padding: 16px;
     }
 
     .shell {
       width: 100%;
-      max-width: 1120px;
+      max-width: 1100px;
       margin: auto;
     }
 
-    /* TOP / HERO SECTION (Z-PATTERN) */
+    /* HERO / TOP SECTION */
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
       gap: 32px;
-      align-items: center;
-      padding: 28px 22px;
+      padding: 26px 22px;
+      border-radius: 26px;
       background: linear-gradient(135deg, var(--bg-soft), #141b35);
-      border-radius: 24px;
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-soft);
-      margin-bottom: 28px;
+      margin-bottom: 26px;
+      align-items: center;
     }
 
     .hero-left {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
     }
 
     .eyebrow {
@@ -103,12 +95,13 @@
       color: var(--muted);
     }
 
-    .hero-cta-group {
-      margin-top: 8px;
+    .hero-cta-wrapper {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 6px;
+      margin-top: 10px;
+      max-width: 420px;
     }
 
     .btn-cta {
@@ -116,46 +109,32 @@
       text-align: center;
       padding: 14px 22px;
       border-radius: var(--radius-pill);
-      background: linear-gradient(135deg, var(--accent), #a76dff);
-      color: #fff;
-      font-weight: 600;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #ffffff;
       font-size: 0.98rem;
+      font-weight: 600;
       border: none;
       cursor: pointer;
-      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.55);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.55);
       transition: transform 0.12s ease, box-shadow 0.12s ease,
         filter 0.12s ease;
-      max-width: 100%;
-      white-space: normal;
+      white-space: normal;      /* allow wrapping */
       line-height: 1.3;
+      width: 100%;              /* mobile friendly */
+      max-width: 100%;
     }
 
     .btn-cta:hover,
     .btn-cta:focus-visible {
       transform: translateY(-1px);
-      box-shadow: 0 16px 33px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.6);
       filter: brightness(1.05);
     }
 
     .hero-trust {
       font-size: 0.8rem;
       color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .hero-trust span.badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2px 8px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(55, 217, 150, 0.4);
-      color: var(--success);
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      text-align: center;
     }
 
     .hero-right {
@@ -163,72 +142,74 @@
       min-height: 220px;
     }
 
-    .product-card {
+    .visual {
       position: relative;
       width: 100%;
       height: 100%;
       border-radius: 24px;
-      border: 1px solid rgba(127, 93, 255, 0.4);
+      border: 1px solid rgba(127, 93, 255, 0.5);
       background: radial-gradient(circle at top, #262f68 0, #090d21 55%);
       overflow: hidden;
       padding: 18px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     }
 
-    .product-card::before {
+    .visual::before {
       content: "";
       position: absolute;
       inset: -40%;
       background: conic-gradient(
-        from 210deg,
-        rgba(127, 93, 255, 0.12),
+        from 200deg,
+        rgba(127, 93, 255, 0.15),
         transparent 40%,
         transparent 70%,
-        rgba(81, 232, 255, 0.12)
+        rgba(79, 209, 197, 0.16)
       );
-      opacity: 0.7;
+      opacity: 0.9;
       filter: blur(6px);
     }
 
-    .product-card-inner {
+    .visual-inner {
       position: relative;
       z-index: 1;
-      backdrop-filter: blur(6px);
     }
 
-    .product-tag {
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--muted);
-      margin-bottom: 6px;
+    .visual-orb {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 14px;
+      background: radial-gradient(circle at 30% 30%, #fdfbff, #7f5dff 40%, #141b35 75%);
+      box-shadow: 0 0 36px rgba(127, 93, 255, 0.9);
+      position: relative;
     }
 
-    .product-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 6px;
+    .visual-orb::after {
+      content: "";
+      position: absolute;
+      inset: 32%;
+      border-radius: 50%;
+      border: 2px solid rgba(5, 8, 22, 0.9);
+      box-shadow: 0 0 0 3px rgba(5, 8, 22, 0.7);
     }
 
-    .product-meta {
-      font-size: 0.78rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .product-placeholder {
-      margin-top: 12px;
-      border-radius: 18px;
-      border: 1px dashed rgba(255, 255, 255, 0.26);
-      padding: 10px;
-      font-size: 0.75rem;
-      color: var(--muted);
+    .visual-title {
       text-align: center;
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin-bottom: 4px;
     }
 
-    /* SOCIAL PROOF */
+    .visual-meta {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* GENERIC SECTIONS */
 
     .section {
       background: var(--bg-soft);
@@ -253,6 +234,8 @@
       color: var(--muted);
     }
 
+    /* SOCIAL PROOF */
+
     .testimonial-list {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -261,23 +244,19 @@
     }
 
     .testimonial-card {
-      background: #11162b;
+      background: var(--card);
       border-radius: var(--radius-md);
       border: 1px solid var(--border-subtle);
       padding: 14px;
-      font-size: 0.85rem;
+      font-size: 0.86rem;
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
 
     .testimonial-stars {
-      color: #f7c948;
-      font-size: 0.8rem;
-    }
-
-    .testimonial-quote {
-      color: var(--text);
+      color: #f6c453;
+      font-size: 0.78rem;
     }
 
     .testimonial-name {
@@ -286,12 +265,6 @@
     }
 
     /* PROBLEM + SOLUTION */
-
-    .problem-solution {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr);
-      gap: 10px;
-    }
 
     .problem-solution h2 {
       font-size: 1.3rem;
@@ -307,18 +280,13 @@
       margin-top: 10px;
     }
 
-    /* FOOTER / LOWER SECTION */
+    /* FOOTER */
 
     footer.footer {
       padding: 18px 6px 6px;
       font-size: 0.78rem;
       color: var(--muted);
       text-align: center;
-    }
-
-    .footer small {
-      display: block;
-      margin: 4px 0;
     }
 
     .footer-divider {
@@ -328,9 +296,14 @@
       background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.22),
         transparent
       );
+    }
+
+    .footer small {
+      display: block;
+      margin: 2px 0;
     }
 
     /* RESPONSIVE */
@@ -338,41 +311,41 @@
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: minmax(0, 1fr);
-        padding: 20px 18px;
+        padding: 22px 18px;
       }
 
       .hero-right {
-        order: -1;
+        order: -1; /* visual on top for mobile */
       }
 
       h1.hero-title {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
       }
 
       .testimonial-list {
         grid-template-columns: minmax(0, 1fr);
       }
+
+      .hero-cta-wrapper {
+        max-width: 100%;
+      }
     }
 
     @media (max-width: 600px) {
-      .hero {
-        margin-bottom: 22px;
-      }
-
       .page {
         padding: 10px;
       }
 
+      .section {
+        padding: 18px 16px;
+      }
+
       h1.hero-title {
-        font-size: 1.55rem;
+        font-size: 1.45rem;
       }
 
       .btn-cta {
-        width: 100%;
-      }
-
-      .section {
-        padding: 18px 16px;
+        font-size: 0.94rem;
       }
     }
   </style>
@@ -381,25 +354,22 @@
   <div class="page">
     <div class="shell">
 
-      <!-- HERO / TOP SECTION -->
+      <!-- TOP SECTION / HERO (Z-PATTERN) -->
       <section class="hero">
-        <!-- RIGHT ON MOBILE VIA ORDER, RIGHT COLUMN ON DESKTOP -->
+        <!-- Right visual (on top for mobile) -->
         <div class="hero-right">
-          <div class="product-card">
-            <div class="product-card-inner">
-              <div class="product-tag">Audio Meditation Program</div>
-              <div class="product-title">Third Eye Chakra Activation</div>
-              <div class="product-meta">
-                Chakra-tuned sound frequencies designed to support a clearer, calmer mind.
-              </div>
-              <div class="product-placeholder">
-                Product image goes here. Replace this box with your cover art or illustration for the audio program.
+          <div class="visual">
+            <div class="visual-inner">
+              <div class="visual-orb"></div>
+              <div class="visual-title">Third Eye Chakra Meditation</div>
+              <div class="visual-meta">
+                Chakra-tuned audio tracks focused on supporting mental clarity and calmer thinking.
               </div>
             </div>
           </div>
         </div>
 
-        <!-- LEFT COLUMN -->
+        <!-- Left copy block -->
         <div class="hero-left">
           <div class="eyebrow">Third Eye Clarity</div>
           <h1 class="hero-title">
@@ -409,7 +379,7 @@
             Struggling with mental fog? Use guided chakra audio to support clearer thinking.
           </p>
 
-          <div class="hero-cta-group">
+          <div class="hero-cta-wrapper">
             <a
               href="https://www.digistore24.com/redir/439776/Kiere1989/"
               class="btn-cta"
@@ -419,8 +389,7 @@
               Get Instant Access to the Chakra-Tuned Audio Tracks Now
             </a>
             <div class="hero-trust">
-              <span class="badge">60-Day Guarantee</span>
-              <span>60-day money back guarantee. Absolutely no questions asked.</span>
+              60-day money back guarantee. Absolutely no questions asked.
             </div>
           </div>
         </div>
@@ -429,33 +398,33 @@
       <!-- SOCIAL PROOF SECTION -->
       <section class="section">
         <div class="section-header">
-          <h2 class="section-title">What Listeners Are Saying</h2>
+          <h2 class="section-title">What Listeners Are Experiencing</h2>
           <p class="section-subtitle">
-            These are real experiences from people who added guided third-eye meditation to their routine.
+            Short, focused sessions that fit into real life — helping people bring more clarity into their day.
           </p>
         </div>
 
-        <div class="testimonial-list">
+       <div class="testimonial-list">
           <article class="testimonial-card">
             <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-quote">
-              “Within a few days my mind felt noticeably quieter and it became easier to focus on what actually matters.”
+            <div>
+              “After a week of using the third eye track, my thoughts feel less scattered and I can focus on one thing at a time.”
             </div>
             <div class="testimonial-name">— Alicia M.</div>
           </article>
 
           <article class="testimonial-card">
             <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-quote">
-              “The chakra audio tracks gave structure to my practice. I finally feel like I have a clear, simple routine for clarity.”
+            <div>
+              “The guided audios gave me a simple routine. It’s the first time meditation has actually helped me think more clearly.”
             </div>
             <div class="testimonial-name">— Jordan K.</div>
           </article>
 
           <article class="testimonial-card">
             <div class="testimonial-stars">★★★★☆</div>
-            <div class="testimonial-quote">
-              “I use the third-eye track at night and notice less mental chatter and more calm, steady thoughts during the day.”
+            <div>
+              “I listen before bed and notice less mental chatter and more calm, steady decisions the next day.”
             </div>
             <div class="testimonial-name">— Ravi S.</div>
           </article>
@@ -465,27 +434,25 @@
       <!-- PROBLEM + SOLUTION SECTION -->
       <section class="section">
         <div class="problem-solution">
-          <div>
-            <h2> 
-              Still Struggling With Mental Fog? Skip Complicated Rituals and Use Chakra-Tuned Audio for Clearer Thinking.
-            </h2>
+          <h2>
+            Still Struggling With Mental Fog? Skip Complicated Rituals and Use Chakra-Tuned Audio for Clearer Thinking.
+          </h2>
 
-            <p>
-              Many people try to open their third eye but still struggle with mental fog, scattered thoughts, or a lack of clear inner guidance. Traditional methods — long meditation sessions, visualization techniques, or complicated rituals — often feel overwhelming and don’t always create real clarity.
-            </p>
+          <p>
+            Many people try to open their third eye but still struggle with mental fog, scattered thoughts, or a lack of clear inner guidance. Traditional methods — long meditation sessions, visualization techniques, or complicated rituals — often feel overwhelming and don’t always create real clarity.
+          </p>
 
-            <p>
-              That’s why these chakra-tuned audio tracks focus directly on the third eye center using calibrated frequencies designed to support clearer thinking and deeper insight. It’s a simple, structured approach you can use at your own pace.
-            </p>
+          <p>
+            That’s why these chakra-tuned audio tracks focus directly on the third eye center using calibrated frequencies designed to support clearer thinking and deeper insight. It’s a simple, structured approach you can use at your own pace.
+          </p>
 
-            <p>
-              If you’re looking for a more reliable way to support mental clarity, you can explore the audio program and see if it aligns with what you need.
-            </p>
-          </div>
+          <p>
+            If you’re looking for a more reliable way to support mental clarity, you can explore the audio program and see if it aligns with what you need.
+          </p>
         </div>
       </section>
 
-      <!-- BOTTOM / LOWER SECTION -->
+      <!-- LOWER SECTION / FOOTER -->
       <footer class="footer">
         <div class="footer-divider"></div>
         <small>We respect your privacy.</small>
