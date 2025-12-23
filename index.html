@@ -1,333 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Money Manifestation Affirmations | Guided Chakra-Tuned Audio Tracks</title>
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --card:#121826;
-      --text:#e9eef7;
-      --muted:#b7c2d6;
-      --line:rgba(255,255,255,.10);
-      --accent:#7c5cff;
-      --accent2:#2dd4bf;
-      --btn:#ffffff;
-      --btnText:#0b0f14;
-      --shadow: 0 12px 30px rgba(0,0,0,.35);
-      --radius: 16px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1100px 500px at 20% -10%, rgba(124,92,255,.30), transparent 60%),
-                  radial-gradient(900px 450px at 95% 0%, rgba(45,212,191,.20), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.5;
-    }
-    a{color:inherit}
-    .wrap{
-      max-width:1100px;
-      margin:0 auto;
-      padding:24px 16px 56px;
-    }
-    .top{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      align-items:center;
-      padding:22px;
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .kicker{
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      padding:8px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background: rgba(255,255,255,.03);
-      color:var(--muted);
-      font-size:13px;
-      margin-bottom:14px;
-      width: fit-content;
-    }
-    .dot{
-      width:8px;height:8px;border-radius:50%;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      box-shadow:0 0 0 4px rgba(124,92,255,.18);
-    }
-    h1{
-      margin:0 0 10px;
-      font-size: clamp(28px, 3.6vw, 44px);
-      letter-spacing:-0.02em;
-      line-height:1.12;
-    }
-    .sub{
-      margin:0 0 18px;
-      color:var(--muted);
-      font-size: clamp(15px, 1.35vw, 18px);
-      max-width: 54ch;
-    }
-    .ctaRow{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      align-items:flex-start;
-    }
-    .btn{
-      display:inline-flex;
-      justify-content:center;
-      align-items:center;
-      text-decoration:none;
-      font-weight:800;
-      letter-spacing:.01em;
-      background: linear-gradient(90deg, #ffffff, #eaf5ff);
-      color: var(--btnText);
-      padding:14px 16px;
-      border-radius: 14px;
-      border: 0;
-      box-shadow: 0 10px 18px rgba(0,0,0,.35);
-      max-width: 100%;
-      width: min(520px, 100%);
-      text-align:center;
-      white-space: normal;     /* allow wrapping */
-      overflow-wrap: anywhere; /* never overflow on mobile */
-      line-height:1.2;
-    }
-    .btn:focus{outline: 3px solid rgba(124,92,255,.55); outline-offset:3px}
-    .trust{
-      color: var(--muted);
-      font-size: 13px;
-      margin:0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Manifestation Affirmations</title>
 
-    /* Illustration card */
-    .illusCard{
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(0,0,0,.18);
-      padding:14px;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
-    }
-    .illusTitle{
-      margin:0 0 10px;
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing:.02em;
-    }
-    svg{max-width:100%;height:auto;display:block}
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #fff;
+}
 
-    /* Social proof */
-    .social{
-      margin-top:18px;
-      padding:18px 22px;
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.03);
-    }
-    .social h2{
-      margin:0 0 12px;
-      font-size: 18px;
-      letter-spacing:-.01em;
-    }
-    .cards{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-    }
-    .tCard{
-      border:1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(0,0,0,.18);
-      padding:14px;
-      min-height: 160px;
-    }
-    .stars{
-      font-size: 14px;
-      letter-spacing: .06em;
-      color:#ffd166;
-      margin-bottom:8px;
-    }
-    .quote{
-      margin:0 0 12px;
-      color: var(--text);
-      font-size: 14px;
-    }
-    .name{
-      margin:0;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight:700;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
 
-    /* Mid section */
-    .mid{
-      margin-top:18px;
-      padding:22px;
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.03);
-    }
-    .mid h2{
-      margin:0 0 10px;
-      font-size: clamp(20px, 2.1vw, 26px);
-      letter-spacing:-.01em;
-    }
-    .mid p{
-      margin:0 0 12px;
-      color: var(--muted);
-      font-size: 15px;
-      max-width: 80ch;
-    }
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 32px;
+}
 
-    /* Footer */
-    footer{
-      margin-top:22px;
-      padding:18px 22px;
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(0,0,0,.15);
-      color: var(--muted);
-      font-size: 13px;
-    }
-    footer p{margin:6px 0}
+.hero-text {
+  flex: 1;
+}
 
-    /* Responsive */
-    @media (max-width: 900px){
-      .top{grid-template-columns:1fr; gap:14px}
-      .cards{grid-template-columns:1fr}
-      .ctaRow{align-items:stretch}
-      .btn{width:100%}
-    }
-  </style>
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.trust {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.section {
+  margin-top: 32px;
+  background: rgba(255,255,255,0.05);
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 16px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
+
 <body>
-  <main class="wrap">
-    <section class="top" aria-label="Above the fold">
-      <div>
-        <div class="kicker"><span class="dot" aria-hidden="true"></span><span>Digital Program • Instant Access</span></div>
 
-        <h1>Money Manifestation Affirmations Through Guided Chakra-Tuned Audio Tracks</h1>
-        <p class="sub">If affirmations haven’t felt effective, this guided chakra-tuned audio adds structure and focus.</p>
+<div class="container">
 
-        <div class="ctaRow">
-          <a class="btn" href="https://www.digistore24.com/redir/439776/Kiere1989/" rel="nofollow noopener">
-            Get Instant Access to the Chakra-Tuned Audio Tracks Now
-          </a>
-          <p class="trust">60-day money back guarantee. Absolutely no questions asked.</p>
-        </div>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Money Manifestation Affirmations Through Guided Chakra-Tuned Audio Tracks</h1>
+      <p>If affirmations haven’t felt effective, this guided chakra-tuned audio adds structure and focus.</p>
+
+      <a class="cta-btn" href="https://www.digistore24.com/redir/439776/Kiere1989/" target="_blank">
+        Get Instant Access to the Chakra-Tuned Audio Tracks Now
+      </a>
+
+      <div class="trust">
+        60-day money back guarantee. Absolutely no questions asked.
       </div>
+    </div>
 
-      <aside class="illusCard" aria-label="Product illustration">
-        <p class="illusTitle">Program Overview (Illustration)</p>
+    <!-- REAL PRODUCT IMAGE -->
+    <div class="hero-image">
+      <img src="A_digital_product_illustration_in_3D_style_promote.png"
+           alt="Chakra-Tuned Audio Program Mockup">
+    </div>
+  </div>
 
-        <!-- Document-based illustration: 5 audio tracks + quick start guide + 118-page illustrated e-book + software support -->
-        <svg viewBox="0 0 560 420" role="img" aria-label="Digital product mockup showing audio tracks, an illustrated manual, a quick start guide, and software access">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#7c5cff" stop-opacity=".95"/>
-              <stop offset="1" stop-color="#2dd4bf" stop-opacity=".85"/>
-            </linearGradient>
-            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
-              <stop offset="0" stop-color="#ffffff" stop-opacity=".14"/>
-              <stop offset="1" stop-color="#ffffff" stop-opacity=".04"/>
-            </linearGradient>
-            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity=".45"/>
-            </filter>
-          </defs>
+  <!-- PROBLEM + SOLUTION -->
+  <div class="section">
+    <h2>Tried Money Affirmations Before? This Chakra-Tuned Audio System Adds Structure and Consistency</h2>
 
-          <!-- Background panel -->
-          <rect x="18" y="18" width="524" height="384" rx="22" fill="url(#g2)" stroke="rgba(255,255,255,.14)"/>
+    <p>
+      If you’ve been trying to use affirmations or meditation to shift your mindset, but still feel stuck,
+      scattered, or unsure if you’re doing it right, you’re not alone.
+    </p>
 
-          <!-- E-book -->
-          <g filter="url(#shadow)">
-            <path d="M92 95 h150 a16 16 0 0 1 16 16 v210 a16 16 0 0 1-16 16 H92 a16 16 0 0 1-16-16 V111 a16 16 0 0 1 16-16z" fill="rgba(18,24,38,.9)" stroke="rgba(255,255,255,.18)"/>
-            <path d="M92 95 h22 v242 H92 a16 16 0 0 1-16-16 V111 a16 16 0 0 1 16-16z" fill="rgba(255,255,255,.06)"/>
-            <text x="132" y="140" fill="rgba(255,255,255,.92)" font-size="18" font-weight="800">Illustrated Manual</text>
-            <text x="132" y="165" fill="rgba(183,194,214,.95)" font-size="14">118-page e-book</text>
-            <rect x="132" y="190" width="96" height="10" rx="5" fill="rgba(255,255,255,.12)"/>
-            <rect x="132" y="210" width="110" height="10" rx="5" fill="rgba(255,255,255,.10)"/>
-            <rect x="132" y="230" width="88" height="10" rx="5" fill="rgba(255,255,255,.08)"/>
-            <rect x="132" y="252" width="120" height="10" rx="5" fill="rgba(255,255,255,.10)"/>
-            <rect x="132" y="272" width="74" height="10" rx="5" fill="rgba(255,255,255,.08)"/>
-          </g>
+    <p>
+      Most methods rely only on willpower — repeating phrases, forcing focus, or sitting through long
+      sessions — without helping your subconscious shift. That’s why results fade.
+    </p>
 
-          <!-- Audio tracks stack -->
-          <g filter="url(#shadow)">
-            <rect x="270" y="120" width="246" height="84" rx="16" fill="rgba(18,24,38,.88)" stroke="rgba(255,255,255,.18)"/>
-            <rect x="286" y="136" width="52" height="52" rx="12" fill="url(#g1)"/>
-            <polygon points="312,150 312,174 332,162" fill="rgba(0,0,0,.55)"/>
-            <text x="350" y="154" fill="rgba(255,255,255,.92)" font-size="18" font-weight="800">5 Audio Tracks</text>
-            <text x="350" y="178" fill="rgba(183,194,214,.95)" font-size="14">Chakra-tuned frequencies</text>
-          </g>
+    <p>
+      This program uses chakra-tuned sound frequencies and guided audio tracks to support clarity,
+      alignment, and an abundance-focused mindset in a more structured way.
+    </p>
 
-          <!-- Quick start guide -->
-          <g filter="url(#shadow)">
-            <rect x="270" y="214" width="246" height="78" rx="16" fill="rgba(18,24,38,.86)" stroke="rgba(255,255,255,.18)"/>
-            <text x="292" y="248" fill="rgba(255,255,255,.92)" font-size="18" font-weight="800">Quick Start Guide</text>
-            <text x="292" y="272" fill="rgba(183,194,214,.95)" font-size="14">Step-by-step to begin</text>
-          </g>
+    <p>
+      If you’re open to a simpler approach, explore the program and see if it’s right for you.
+    </p>
+  </div>
 
-          <!-- Software -->
-          <g filter="url(#shadow)">
-            <rect x="270" y="300" width="246" height="74" rx="16" fill="rgba(18,24,38,.84)" stroke="rgba(255,255,255,.18)"/>
-            <text x="292" y="334" fill="rgba(255,255,255,.92)" font-size="18" font-weight="800">Software Support</text>
-            <text x="292" y="358" fill="rgba(183,194,214,.95)" font-size="14">Tech-enhanced guidance</text>
-            <circle cx="490" cy="340" r="14" fill="url(#g1)"/>
-            <rect x="456" y="352" width="68" height="6" rx="3" fill="rgba(255,255,255,.10)"/>
-          </g>
-        </svg>
-      </aside>
-    </section>
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Privacy:</strong> We respect your privacy.</p>
+    <p><strong>Affiliate Disclosure:</strong> Disclosure: I am an affiliate for this product. If you purchase through my link, I may earn a commission.</p>
+  </footer>
 
-    <!-- Social Proof: Extracted from the provided document -->
-    <section class="social" aria-label="Testimonials">
-      <h2>Customer Reviews</h2>
-      <div class="cards">
-        <article class="tCard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">"I’ve tried countless manifestation programs, but none… had the lasting impact…"</p>
-          <p class="name">Michel D.</p>
-        </article>
+</div>
 
-        <article class="tCard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">"The combination of audio guidance and AI-powered support made it easy to stick…"</p>
-          <p class="name">Sarah P.</p>
-        </article>
-
-        <article class="tCard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">"Just listen, follow the steps… The software gave me a clear path…"</p>
-          <p class="name">John M.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="mid" aria-label="Problem and solution">
-      <h2>Tried Money Affirmations Before? This Chakra-Tuned Audio System Adds Structure And Consistency</h2>
-
-      <p>If you’ve been trying to use affirmations or meditation to shift your mindset, but still feel stuck, scattered, or unsure if you’re doing it right, you’re not alone. Many people want real change, yet keep running into the same mental blocks.</p>
-
-      <p>The problem is that most methods rely only on willpower — repeating phrases, forcing focus, or sitting through long sessions — without a structured system to help you stay consistent. That’s why they often feel inspiring at first, but fade without lasting follow-through.</p>
-
-      <p>This program combines audio tracks, guided meditations, and software support, with audio designed around specific sound frequencies tied to chakra activation. If you’re open to a more structured approach, take a look at the program details and see if it aligns with what you’re looking for.</p>
-    </section>
-
-    <footer aria-label="Footer">
-      <p><strong>Privacy:</strong> We respect your privacy and do not collect personal information on this page.</p>
-      <p><strong>Affiliate Disclosure:</strong> Disclosure: I am an affiliate for this product. If you purchase through my link, I may earn a commission.</p>
-    </footer>
-
-    <!-- Document source: Midas Manifestation - Official Site | USA.pdf (user-provided) -->
-  </main>
 </body>
-</html> 
+</html>
