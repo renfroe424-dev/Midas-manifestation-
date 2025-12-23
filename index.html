@@ -1,273 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Sources:
+     [oai_citation:0‡Midas Manifestation - Official Site | USA.pdf](sediment://file_00000000f2cc71f5b4c073a2035c413d)
+     [oai_citation:1‡Midas Manifestation - Official Site | USA.pdf](sediment://file_00000000f2cc71f5b4c073a2035c413d)
+     [oai_citation:2‡Midas Manifestation - Official Site | USA.pdf](sediment://file_00000000945871fd84272f6162207d37)
+  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Money Manifestation Affirmations</title>
-  <meta name="description" content="Guided chakra-tuned audio tracks to support a more structured money manifestation affirmation practice." />
+  <title>Midas Manifestation – Guided Audio Program</title>
+  <meta name="description" content="A digital manifestation program with audio tracks, a quick start guide, and a 118-page illustrated e-book." />
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a33;
-      --text:#eaf0ff;
-      --muted:#b9c4e6;
-      --line:rgba(255,255,255,.12);
-      --btn:#ffffff;
-      --btnText:#0b1220;
-      --shadow:0 10px 28px rgba(0,0,0,.35);
+      --bg:#0b0f19;
+      --panel:#11182a;
+      --panel2:#0e1526;
+      --text:#e9eefc;
+      --muted:#b8c4e6;
+      --line:rgba(255,255,255,.10);
+      --accent:#7c5cff;
+      --accent2:#2ee6a6;
+      --shadow: 0 18px 48px rgba(0,0,0,.45);
       --radius:18px;
+      --radius2:14px;
       --max:1100px;
+      --pad: clamp(16px, 4vw, 40px);
+      --h1: clamp(28px, 5.4vw, 48px);
+      --h2: clamp(20px, 3.6vw, 30px);
+      --p:  clamp(15px, 2.4vw, 18px);
     }
+
     *{box-sizing:border-box}
+    html,body{height:100%}
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 20% 0%, rgba(102,126,234,.25), transparent 55%),
-                  radial-gradient(900px 600px at 90% 10%, rgba(118,75,162,.25), transparent 60%),
-                  var(--bg);
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(124,92,255,.20), transparent 55%),
+                  radial-gradient(900px 500px at 85% 20%, rgba(46,230,166,.12), transparent 55%),
+                  linear-gradient(180deg, var(--bg), #070a12 70%);
       color:var(--text);
-      line-height:1.55;
+      line-height:1.45;
     }
+
     a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:22px 16px 54px;}
+    .wrap{max-width:var(--max); margin:0 auto; padding: var(--pad);}
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
       border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
     }
-    .hero{
-      padding:26px;
+
+    header.hero{
+      padding: clamp(22px, 4vw, 44px);
+      background:
+        radial-gradient(900px 420px at 10% 20%, rgba(124,92,255,.18), transparent 60%),
+        radial-gradient(700px 380px at 90% 15%, rgba(46,230,166,.10), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00));
+    }
+
+    .heroGrid{
       display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:22px;
+      gap: clamp(18px, 3vw, 34px);
       align-items:center;
     }
-    .kicker{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      padding:8px 12px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      color:var(--muted);
-      font-size:13px;
-      margin-bottom:14px;
-      width:max-content;
+    @media (min-width: 860px){
+      .heroGrid{ grid-template-columns: 1.05fr .95fr; }
     }
-    h1{
-      margin:0 0 10px;
-      font-size: clamp(28px, 4vw, 42px);
-      line-height:1.15;
-      letter-spacing:-.02em;
-    }
+
+    h1{font-size:var(--h1); margin:0 0 12px; letter-spacing:-.02em}
     .sub{
       margin:0 0 18px;
       color:var(--muted);
-      font-size: clamp(16px, 2.1vw, 18px);
-      max-width: 48ch;
+      font-size: var(--p);
+      max-width: 58ch;
     }
 
-    /* CTA: centered, wraps, never overflows */
     .ctaRow{
       display:flex;
-      justify-content:flex-start;
+      flex-wrap:wrap;
       gap:12px;
-      flex-wrap:wrap;
       align-items:center;
-      margin: 14px 0 10px;
+      margin-top: 14px;
     }
-    .ctaBtn{
+
+    .btn{
       display:inline-flex;
-      justify-content:center;
       align-items:center;
-      text-align:center;
-      padding:14px 16px;
-      border-radius:999px;
-      background:var(--btn);
-      color:var(--btnText);
-      border:1px solid rgba(255,255,255,.35);
-      font-weight:750;
-      font-size:16px;
-      line-height:1.2;
+      justify-content:center;
       text-decoration:none;
-
-      /* critical anti-overflow */
-      max-width:100%;
-      white-space:normal;
-      word-break:break-word;
-      overflow-wrap:anywhere;
-    }
-    .ctaBtn span{display:inline; max-width:100%;}
-    .trust{
-      margin:0;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .imgBox{
-      border-radius: var(--radius);
-      border:1px dashed rgba(255,255,255,.25);
-      background: rgba(255,255,255,.04);
-      min-height: 260px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      font-weight: 700;
+      letter-spacing:.01em;
+      padding: 14px 18px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(46,230,166,.75));
+      color:#071020;
+      box-shadow: 0 10px 24px rgba(124,92,255,.18);
+      max-width: 100%;
       text-align:center;
-      padding:16px;
-      color:var(--muted);
-    }
-    .imgBox strong{color:var(--text)}
-    .section{
-      margin-top:18px;
-      padding:22px;
-    }
-    .section h2{
-      margin:0 0 10px;
-      font-size: clamp(20px, 2.6vw, 28px);
-      letter-spacing:-.01em;
+      white-space: normal;
+      word-break: break-word;
       line-height:1.2;
     }
-    .section p{
-      margin:0;
-      color:var(--muted);
-      max-width: 80ch;
-    }
-    .testimonials{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-      margin-top:14px;
-    }
-    .tcard{
-      border:1px solid var(--line);
-      background: rgba(0,0,0,.18);
-      border-radius:16px;
-      padding:14px;
-    }
-    .stars{font-size:14px; letter-spacing:1px; margin-bottom:8px;}
-    .quote{margin:0 0 10px; color:var(--text)}
-    .name{margin:0; color:var(--muted); font-size:13px}
+    .btn span{display:block}
+    .btn:active{transform: translateY(1px)}
 
-    .footer{
-      margin-top:18px;
-      padding:18px 22px;
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .pill strong{color:var(--text); font-weight:700}
+
+    .trust{
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .section{
+      padding: clamp(18px, 3.2vw, 34px);
+      border-top: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.01), rgba(255,255,255,.00));
+    }
+
+    h2{font-size: var(--h2); margin:0 0 10px; letter-spacing:-.01em}
+    p{font-size: var(--p); margin: 0 0 12px; color: var(--text)}
+    .muted{color: var(--muted)}
+
+    .features{
+      display:grid;
+      gap:12px;
+      margin-top: 14px;
+    }
+    @media (min-width: 860px){
+      .features{grid-template-columns: 1fr 1fr}
+    }
+
+    .featureBox{
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--line);
+      border-radius: var(--radius2);
+      padding: 14px 14px;
+    }
+    .featureBox h3{
+      margin:0 0 6px;
+      font-size: 16px;
+      letter-spacing:.01em;
+    }
+    .featureBox p{margin:0; color:var(--muted); font-size: 14px}
+
+    .reviews{
+      display:grid;
+      gap:12px;
+      margin-top: 12px;
+    }
+    @media (min-width: 860px){
+      .reviews{grid-template-columns: 1fr 1fr 1fr}
+    }
+    .review{
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--line);
+      border-radius: var(--radius2);
+      padding: 14px;
+    }
+    .stars{letter-spacing:1px; color: rgba(255,255,255,.88); font-size: 13px; margin-bottom: 8px}
+    .quote{color: var(--text); font-size: 14px; margin:0 0 10px}
+    .name{color: var(--muted); font-size: 13px; margin:0}
+    .divider{height:1px; background: var(--line); margin: 14px 0}
+
+    .foot{
       display:flex;
       flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
       justify-content:space-between;
-      gap:10px;
-      color:var(--muted);
-      font-size:13px;
-      border-top:1px solid var(--line);
+      padding: 16px clamp(18px, 3.2vw, 34px);
+      border-top: 1px solid var(--line);
+      background: rgba(0,0,0,.15);
+    }
+    .small{font-size: 12px; color: var(--muted); margin:0; max-width: 75ch}
+    .linkish{
+      text-decoration:none;
+      border-bottom: 1px dotted rgba(255,255,255,.30);
     }
 
-    /* Responsive */
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr; padding:22px;}
-      .sub{max-width:65ch}
-      .ctaRow{justify-content:center;}
-      .testimonials{grid-template-columns:1fr; }
-      .imgBox{min-height:220px;}
+    /* Product illustration block */
+    .mockWrap{
+      background: rgba(0,0,0,.18);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      overflow:hidden;
     }
-    @media (max-width: 420px){
-      .hero{padding:18px;}
-      .section{padding:18px;}
-      .ctaBtn{width:100%;}
-    }
+    svg{max-width:100%; height:auto; display:block}
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- TOP SECTION (ABOVE THE FOLD) -->
-    <div class="card hero" role="region" aria-label="Landing Page Hero">
-      <div>
-        <div class="kicker" aria-label="Program tag">
-          <span>●</span>
-          <span>Guided Audio Program</span>
-        </div>
+  <main class="wrap">
+    <article class="card">
+      <header class="hero">
+        <div class="heroGrid">
+          <div>
+            <h1>Midas Manifestation: Guided Audio + E-Book System</h1>
+            <p class="sub">
+              A digital program built around sound frequencies, guided audio, and a 118-page illustrated manual.
+              Designed as a structured, self-paced approach you can access instantly online.
+            </p>
 
-        <h1>Money Manifestation Affirmations Through Guided Chakra-Tuned Audio Tracks</h1>
-        <p class="sub">If affirmations haven’t felt effective, this guided chakra-tuned audio adds structure and focus.</p>
+            <div class="ctaRow">
+              <a class="btn" href="https://www.digistore24.com/redir/439776/Kiere1989/" rel="nofollow sponsored noopener" target="_blank">
+                <span>Get Instant Access Now</span>
+              </a>
+              <span class="pill"><strong>Today:</strong> $37 • One-Time Purchase</span>
+            </div>
 
-        <div class="ctaRow">
-          <a class="ctaBtn" href="https://www.digistore24.com/redir/439776/Kiere1989/" target="_blank" rel="nofollow noopener">
-            <span>Get Instant Access To The Chakra-Tuned Audio Tracks Now</span>
-          </a>
-        </div>
+            <p class="trust">
+              60-Day 100% Money-Back Guarantee • No Questions Asked
+            </p>
+          </div>
 
-        <p class="trust">60-day money back guarantee. Absolutely no questions asked.</p>
-      </div>
+          <!-- Product Image / Illustration (Generated from document details only) -->
+          <div class="mockWrap" aria-label="Product Illustration">
+            <svg viewBox="0 0 880 620" role="img" aria-label="Digital Product Mockup">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#7c5cff" stop-opacity="0.95"/>
+                  <stop offset="1" stop-color="#2ee6a6" stop-opacity="0.75"/>
+                </linearGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#11182a"/>
+                  <stop offset="1" stop-color="#0e1526"/>
+                </linearGradient>
+                <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.45"/>
+                </filter>
+              </defs>
 
-      <!-- Product Image / Illustration placeholder -->
-      <div class="imgBox" aria-label="Product image placeholder">
-        <div>
-          <strong>Product Image / Illustration</strong>
-          <div style="margin-top:8px; font-size:13px;">
-            Replace this box with your image (recommended: 900×900 or 1200×1200).
+              <!-- Background -->
+              <rect x="0" y="0" width="880" height="620" rx="26" fill="url(#g2)"/>
+              <circle cx="140" cy="110" r="140" fill="url(#g1)" opacity="0.18"/>
+              <circle cx="760" cy="120" r="160" fill="url(#g1)" opacity="0.10"/>
+              <circle cx="690" cy="520" r="190" fill="url(#g1)" opacity="0.08"/>
+
+              <!-- Book (118-page illustrated e-book) -->
+              <g filter="url(#shadow)">
+                <path d="M120 170
+                         Q120 140 150 140
+                         H390
+                         Q420 140 420 170
+                         V500
+                         Q420 530 390 530
+                         H150
+                         Q120 530 120 500
+                         Z"
+                      fill="#0b1020" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+                <path d="M420 170
+                         Q420 140 450 140
+                         H620
+                         Q650 140 650 170
+                         V500
+                         Q650 530 620 530
+                         H450
+                         Q420 530 420 500
+                         Z"
+                      fill="#0b1020" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+                <rect x="150" y="175" width="470" height="320" rx="18" fill="rgba(255,255,255,0.03)"/>
+
+                <text x="185" y="235" font-size="28" fill="rgba(255,255,255,0.92)" font-weight="700">
+                  Midas Manifestation Manual
+                </text>
+                <text x="185" y="272" font-size="16" fill="rgba(255,255,255,0.70)">
+                  118-Page Illustrated E-Book + Quick Start Guide
+                </text>
+
+                <!-- Decorative "illustrations" -->
+                <g opacity="0.95">
+                  <circle cx="235" cy="345" r="26" fill="url(#g1)" opacity="0.9"/>
+                  <circle cx="305" cy="345" r="26" fill="url(#g1)" opacity="0.55"/>
+                  <circle cx="375" cy="345" r="26" fill="url(#g1)" opacity="0.35"/>
+                  <circle cx="445" cy="345" r="26" fill="url(#g1)" opacity="0.25"/>
+                  <circle cx="515" cy="345" r="26" fill="url(#g1)" opacity="0.18"/>
+                </g>
+
+                <text x="185" y="430" font-size="14" fill="rgba(255,255,255,0.68)">
+                  Includes 5 unique audio tracks tuned to activate different chakras
+                </text>
+              </g>
+
+              <!-- Audio tracks "cards" -->
+              <g filter="url(#shadow)">
+                <rect x="560" y="250" width="255" height="270" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+                <text x="590" y="300" font-size="18" fill="rgba(255,255,255,0.9)" font-weight="700">Audio Tracks</text>
+                <text x="590" y="328" font-size="13" fill="rgba(255,255,255,0.68)">5 Unique, Chakra-Tuned Sessions</text>
+
+                <!-- Track list -->
+                <g fill="rgba(255,255,255,0.72)" font-size="12">
+                  <text x="590" y="372">• Track 1</text>
+                  <text x="590" y="402">• Track 2</text>
+                  <text x="590" y="432">• Track 3</text>
+                  <text x="590" y="462">• Track 4</text>
+                  <text x="590" y="492">• Track 5</text>
+                </g>
+
+                <!-- Play button -->
+                <circle cx="765" cy="312" r="22" fill="url(#g1)"/>
+                <path d="M758 300 L758 324 L779 312 Z" fill="#071020"/>
+              </g>
+
+              <!-- "Software" badge (mentioned in doc) -->
+              <g filter="url(#shadow)">
+                <rect x="560" y="175" width="255" height="60" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+                <text x="590" y="213" font-size="16" fill="rgba(255,255,255,0.9)" font-weight="700">Software Included</text>
+                <text x="590" y="235" font-size="12" fill="rgba(255,255,255,0.68)">Tech-Enhanced Support (Digital)</text>
+              </g>
+
+              <!-- Footer note -->
+              <text x="26" y="592" font-size="12" fill="rgba(255,255,255,0.55)">
+                Digital Program • Instant Download • Phone/Tablet/Computer Access
+              </text>
+            </svg>
           </div>
         </div>
-      </div>
-    </div>
+      </header>
 
-    <!-- SOCIAL PROOF SECTION -->
-    <div class="card section" role="region" aria-label="Social Proof">
-      <h2>What People Say</h2>
-      <p>Add 2–3 short testimonials here (keep them realistic and avoid specific financial promises).</p>
+      <!-- Social Proof (Extracted only because document includes it) -->
+      <section class="section">
+        <h2>Customer Reviews</h2>
+        <div class="reviews">
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "I've tried countless manifestation programs, but none of them had the lasting impact that
+              Midas Manifestation did."
+            </p>
+            <p class="name">— Michel D.</p>
+          </div>
 
-      <div class="testimonials">
-        <div class="tcard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">“[Testimonial #1 goes here.]”</p>
-          <p class="name">— [Name]</p>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "The combination of audio guidance and AI-powered support made it easy to stick to the routine."
+            </p>
+            <p class="name">— Sarah P.</p>
+          </div>
+
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "Just listen, follow the steps, and watch your life change. The software gave me a clear path."
+            </p>
+            <p class="name">— John M.</p>
+          </div>
         </div>
-        <div class="tcard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">“[Testimonial #2 goes here.]”</p>
-          <p class="name">— [Name]</p>
+      </section>
+
+      <!-- Problem + Solution -->
+      <section class="section">
+        <h2>Want A Structured Approach Instead Of Guesswork?</h2>
+        <p class="muted">
+          Many people try different manifestation routines, but struggle to stay consistent or feel unsure about what to do next.
+          The “old way” often turns into overthinking, switching methods, or forcing long sessions without a clear system.
+        </p>
+        <p class="muted">
+          This program is built as a complete package: five chakra-tuned audio tracks, a quick start guide, and an illustrated manual,
+          designed to be followed step-by-step. It’s also entirely online and instantly downloadable, so you can use it on your phone,
+          tablet, or computer.
+        </p>
+        <p class="muted">
+          If you want to see what’s included and decide if it matches what you’re looking for, you can review the program details on the next page.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>What You Get</h2>
+        <div class="features">
+          <div class="featureBox">
+            <h3>Five Unique Audio Tracks</h3>
+            <p>Chakra-tuned sound frequencies designed around the program’s system.</p>
+          </div>
+          <div class="featureBox">
+            <h3>118-Page Illustrated Manual</h3>
+            <p>A comprehensive e-book that explains the approach and how to follow it.</p>
+          </div>
+          <div class="featureBox">
+            <h3>Quick Start Guide</h3>
+            <p>A simplified, step-by-step guide to help you begin without overwhelm.</p>
+          </div>
+          <div class="featureBox">
+            <h3>Digital, Instant Access</h3>
+            <p>Online and downloadable for use anytime on phone, tablet, or computer.</p>
+          </div>
         </div>
-        <div class="tcard">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p class="quote">“[Testimonial #3 goes here.]”</p>
-          <p class="name">— [Name]</p>
+
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="btn" href="https://www.digistore24.com/redir/439776/Kiere1989/" rel="nofollow sponsored noopener" target="_blank">
+            <span>View Program &amp; Checkout</span>
+          </a>
+          <span class="pill"><strong>Guarantee:</strong> 60 Days</span>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- PROBLEM + SOLUTION SECTION -->
-    <div class="card section" role="region" aria-label="Problem and Solution">
-      <h2>Tried Money Affirmations Before? This Chakra-Tuned Audio System Adds Structure And Consistency</h2>
-
-      <p>
-        If you’ve been trying to use affirmations or meditation to shift your mindset, but still feel stuck, scattered,
-        or unsure if you’re doing it right, you’re not alone. Many people want real change, yet keep running into the
-        same mental blocks.<br><br>
-
-        The problem is that most methods rely only on willpower — repeating phrases, forcing focus, or sitting through
-        long sessions — without actually helping your subconscious shift. That’s why they often feel inspiring at first,
-        but fade without lasting results.<br><br>
-
-        Midas Manifestation takes a different approach by using chakra-tuned sound frequencies and guided audio tracks
-        designed to work directly with your brainwaves and subconscious patterns, making it easier to support clarity,
-        alignment, and an abundance-focused mindset — even if you’re new to manifestation.<br><br>
-
-        If you’re open to a simpler, more structured way to support your inner shift, take a look at the program and see
-        if it feels like the right next step for you.
-      </p>
-
-      <div class="ctaRow" style="margin-top:18px;">
-        <a class="ctaBtn" href="https://www.digistore24.com/redir/439776/Kiere1989/" target="_blank" rel="nofollow noopener">
-          <span>Get Instant Access To The Chakra-Tuned Audio Tracks Now</span>
-        </a>
-      </div>
-      <p class="trust">60-day money back guarantee. Absolutely no questions asked.</p>
-    </div>
-
-    <!-- LOWER SECTION -->
-    <div class="card footer" role="contentinfo" aria-label="Footer">
-      <div>We respect your privacy.</div>
-      <div>Disclosure: I am an affiliate for this product.</div>
-    </div>
-  </div>
+      <!-- Footer -->
+      <footer class="foot">
+        <p class="small">
+          Privacy: We respect your privacy and do not collect sensitive personal information on this page.
+        </p>
+        <p class="small">
+          Affiliate Disclosure: I may earn a commission if you purchase through my link.
+        </p>
+      </footer>
+    </article>
+  </main>
 </body>
 </html>
