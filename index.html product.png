@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Manifestation Affirmations</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0f14;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 0;
+}
+
+.hero-text {
+  flex: 1 1 480px;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #d0d6dc;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5c97a, #d9a441);
+  color: #000;
+  padding: 16px 28px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.trust-line {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #aab2bb;
+}
+
+.product-image {
+  flex: 1 1 360px;
+  text-align: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-bottom: 16px;
+  color: #d0d6dc;
+}
+
+.footer {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #9aa3ad;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Top Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Money Manifestation Affirmations Through Guided Chakra-Tuned Audio Tracks</h1>
+      <p>If affirmations haven’t felt effective, this guided chakra-tuned audio adds structure and focus.</p>
+      <a class="cta-btn" href="https://www.digistore24.com/redir/439776/Kiere1989/" target="_blank">
+        Get Instant Access to the Chakra-Tuned Audio Tracks Now
+      </a>
+      <div class="trust-line">
+        60-day money back guarantee. Absolutely no questions asked.
+      </div>
+    </div>
+
+    <!-- Product Image -->
+    <div class="product-image">
+      <img src="product.png" alt="Chakra-Tuned Audio Program Product Image">
+    </div>
+  </section>
+
+  <!-- Problem + Solution Section -->
+  <section class="section">
+    <h2>Tried Money Affirmations Before? This Chakra-Tuned Audio System Adds Structure and Consistency</h2>
+
+    <p>
+      If you’ve been trying to use affirmations or meditation to shift your mindset, but still feel stuck,
+      scattered, or unsure if you’re doing it right, you’re not alone. Many people want real change, yet
+      keep running into the same mental blocks.
+    </p>
+
+    <p>
+      The problem is that most methods rely only on willpower — repeating phrases, forcing focus, or
+      sitting through long sessions — without actually helping your subconscious shift. That’s why they
+      often feel inspiring at first, but fade without lasting results.
+    </p>
+
+    <p>
+      This approach uses chakra-tuned sound frequencies and guided audio tracks designed to work directly
+      with your brainwaves and subconscious patterns, making it easier to support clarity, alignment,
+      and an abundance-focused mindset — even if you’re new to manifestation.
+    </p>
+
+    <p>
+      If you’re open to a simpler, more structured way to support your inner shift, take a look at the
+      program and see if it feels like the right next step for you.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>We respect your privacy. Your information is never shared.</div>
+    <div style="margin-top:8px;">
+      Disclosure: I am an affiliate for this product and may earn a commission if you purchase through my link.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
